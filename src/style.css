@@ -12,18 +12,7 @@ html {
   margin: 0;
 }
 
-a {
-  font-family: Roboto, sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: 'wdth' 100;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-}
-
-header {
+.mainHeader {
   max-width: 100%;
   background-color: #fff;
   display: flex;
@@ -33,24 +22,24 @@ header {
   margin: 0 auto;
 }
 
-header img {
+.mainLogo img {
   display: block;
   margin: 0;
 }
 
-ul {
+.mainMenu {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-ul li {
+.mainMenu li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-nav a {
+.mainMenu a {
   font-size: 12px;
   text-decoration: none;
   color: #000;
@@ -59,21 +48,27 @@ nav a {
   height: var(--height-nav);
   position: relative;
   margin-right: 20px;
+  font-family: Roboto, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  text-transform: uppercase;
 }
 
-a:hover {
+.mainMenu a:hover {
   color: var(--color-nav-active);
 }
 
-nav li:last-child a {
+.mainMenu li:last-child a {
   margin-right: 0;
 }
 
-.is-active {
+.mainMenu .is-active {
   color: var(--color-nav-active);
 }
 
-.is-active::after {
+.mainMenu .is-active::after {
   position: absolute;
   display: block;
   content: ' ';
